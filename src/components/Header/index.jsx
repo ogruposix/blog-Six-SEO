@@ -2,11 +2,7 @@
 import Link from 'next/link';
 import Logo from './Logo';
 import {
-  FacebookIcon,
-  GithubIcon,
-  LinkedinIcon,
   MoonIcon,
-  PortfolioIcon,
   SunIcon
 } from './Icons';
 import siteMetadata from '@/src/utils/siteMetaData';
@@ -120,7 +116,7 @@ const Header = () => {
           )}
         </button>
       </nav>
-      <div className="hidden sm:flex items-center">
+      {/* <div className="hidden sm:flex items-center">
         <a
           href={siteMetadata.facebook}
           target="_blank"
@@ -161,7 +157,7 @@ const Header = () => {
             className={'hover:scale-125 transition-all ease duration-200'}
           />
         </a>
-      </div>
+      </div> */}
     </header>
   );
 };

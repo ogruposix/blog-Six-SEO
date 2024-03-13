@@ -59,8 +59,8 @@ const Footer = () => {
           />
         </form>
 
-        <div className="flex items-center mt-8 mb-16 md:mb-24">
-          <a
+        <div className="flex items-center mt-8 md:mb-5">
+          {/* <a
             href={siteMetadata.facebook}
             target="_blank"
             rel="noreferrer"
@@ -100,7 +100,7 @@ const Footer = () => {
             <LinkedinIcon
               className={'hover:scale-125 transition-all ease duration-200'}
             />
-          </a>
+          </a> */}
         </div>
       </div>
 
@@ -109,7 +109,7 @@ const Footer = () => {
         border-t border-solid border-light dark:border-darkGray text-dark dark:text-lightText
         py-6 px-8 flex flex-col md:flex-row items-center justify-between">
         <span className="text-center">
-          &copy; 2024 - 3chains.
+          &copy; 2024 - PharmaSix.
           <br />
           Todos os direitos reservados.
         </span>
@@ -121,7 +121,7 @@ const Footer = () => {
         </Link>
 
         <div className="text-center">
-          Feito com <span className="text-accent">💜</span> por{' '}
+          Feito com <span className="text-accent">♥</span> por{' '}
           <a href="https://trichains.dev" className="underline">
             trichains
           </a>
