@@ -52,6 +52,6 @@ jobs:
         port: 22
         script: |
           docker pull 3.94.60.121:5000/blog-six:dev
-          docker stack deploy -c /container/blog-six.stack.yml dev
+          docker stack deploy -c /container/blog-six.stack.yml blog-dev
 
 
