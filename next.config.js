@@ -3,7 +3,7 @@
 const { withContentlayer } = require('next-contentlayer');
 
 const nextConfig = {
-  basePath: '/blog/',
+  basePath: '/blog',
   compiler: {
     removeConsole: true
   }
