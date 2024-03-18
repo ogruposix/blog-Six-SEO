@@ -16,8 +16,8 @@ module.exports = {
         lightGray: '#E4E5E7',
         darkGray: '#6e698633',
         darkSurface: '#201d2f',
-        accent: '#85e',
-        accentDark: '#c4a7e7',
+        accent: '#a4b391',
+        accentDark: '#a4b391',
         accentText: '#E3D6FF'
       },
       screens: {
