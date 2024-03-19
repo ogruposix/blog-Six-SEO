@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { format } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
+import getAssetUrl from '@/src/utils/AssertUrl';
 
 const BlogLayoutOne = ({ blog }) => {
   return (
@@ -12,9 +13,9 @@ const BlogLayoutOne = ({ blog }) => {
         href={blog.url}
         className="col-span-12 lg:col-span-4 h-full rounded-xl overflow-hidden flex">
         <Image
-          src={blog.image.filePath.replace('../public', '')}
+          src={getAssetUrl(blog.image.filePath.replace('../public', ''))}
           placeholder="blur"
-          blurDataURL={blog.image.blurhashDataUrl}
+          blurDataURL={getAssetUrl(blog.image.blurhashDataUrl)}
           alt={blog.title}
           width={blog.image.width}
           height={blog.image.height}

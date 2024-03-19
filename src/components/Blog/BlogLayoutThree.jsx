@@ -3,15 +3,16 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { format } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
+import getAssetUrl from '@/src/utils/AssertUrl';
 
 const BlogLayoutThree = ({ blog }) => {
   return (
     <div className="group flex flex-col items-center text-dark dark:text-lightText">
       <Link href={blog.url} className="h-full rounded-xl overflow-hidden">
         <Image
-          src={blog.image.filePath.replace('../public', '')}
+          src={getAssetUrl(blog.image.filePath.replace('../public', ''))}
           placeholder="blur"
-          blurDataURL={blog.image.blurhashDataUrl}
+          blurDataURL={getAssetUrl(blog.image.blurhashDataUrl)}
           alt={blog.title}
           width={blog.image.width}
           height={blog.image.height}

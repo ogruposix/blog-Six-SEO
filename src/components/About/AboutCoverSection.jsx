@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import profileCharacter from '@/public/avatar.png';
+import getAssetUrl from '@/src/utils/AssertUrl';
 
 const AboutCoverSection = () => {
   return (
@@ -11,7 +12,7 @@ const AboutCoverSection = () => {
         className="w-full md:w-1/2 h-full flex justify-center items-center
         border-r-2 border-solid border-lightGray dark:border-darkGray">
         <Image
-          src={profileCharacter}
+          src={getAssetUrl(profileCharacter)}
           alt="trichains"
           className="w-4/5 xs:w-3/4 md:w-full h-full object-contain object-center"
           priority

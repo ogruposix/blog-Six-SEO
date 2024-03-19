@@ -5,6 +5,7 @@ import RenderMdx from '@/src/components/Blog/RenderMdx';
 import Tag from '@/src/components/Elements/Tag';
 import Image from 'next/image';
 import siteMetadata from '@/src/utils/siteMetaData';
+import getAssetUrl from '@/src/utils/AssertUrl';
 
 export async function generateStaticParams() {
   return allBlogs.map((blog) => ({
@@ -117,9 +118,9 @@ export default function BlogPage({ params }) {
             bg-dark/60 dark:bg-dark/40"
           />
           <Image
-            src={blog.image.filePath.replace('../public', '')}
+            src={getAssetUrl(blog.image.filePath.replace('../public', ''))}
             placeholder="blur"
-            blurDataURL={blog.image.blurhashDataUrl}
+            blurDataURL={getAssetUrl(blog.image.blurhashDataUrl)}
             alt={blog.title}
             width={blog.image.width}
             height={blog.image.height}
