@@ -9,6 +9,7 @@ import {
   PortfolioIcon
 } from '../Header/Icons';
 import siteMetadata from '@/src/utils/siteMetaData';
+import Image from 'next/image';
 
 const Footer = () => {
   const {
@@ -116,9 +117,39 @@ const Footer = () => {
 
         <Link
           href="/sitemap.xml"
-          className="text-center underline mt-4 md:my-0">
+          className="text-center underline mt-4 md:my-0 hidden">
           sitemap
         </Link>
+
+        <div className="flex flex-col items-center gap-4 my-4">
+          <p className="text-center font-bold text-sm sm:text-base">
+            Segurança
+          </p>
+          <div className="flex justify-center gap-4 items-center w-full md:w-auto text-center">
+            <a href="https://transparencyreport.google.com/safe-browsing/search?url=pharmasix.com.br%2Fblog&hl=pt-PT"
+              target="_blank"
+              rel="noreferrer">
+              <Image
+                src="/blog/badges/google-sec.svg"
+                alt="ISO 27001"
+                width={80}
+                height={80}
+              />
+            </a>
+            <Image
+              src="/blog/badges/ssl.svg"
+              alt="SSL Certificado"
+              width={70}
+              height={70}
+            />
+            <Image
+              src="/blog/badges/encrypt.svg"
+              alt="PCI Compliance"
+              width={100}
+              height={100}
+            />
+          </div>
+        </div>
 
         <div className="text-center">
           Feito com <span className="text-accent">♥</span> por{' '}
