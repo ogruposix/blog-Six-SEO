@@ -1,12 +1,12 @@
 const siteMetadata = {
-  title: '3chains - Explorando o Mundo da Programação',
+  title: 'PharmaSix',
   author: 'trichains',
-  headerTitle: '3chains - Explorando o Mundo da Programação',
+  headerTitle: 'PharmaSix',
   description:
     'Um blog criado com Next.js, Tailwind.css e Contentlayer para explorar e compartilhar conhecimentos sobre programação e desenvolvimento web.',
   language: 'pt-br',
   theme: 'system',
-  siteUrl: 'https://3chains.vercel.app',
+  siteUrl: 'https://pharmasix.com.br/blog',
   siteLogo: '/avatar.png',
   socialBanner: '/banner.jpg',
   email: '3correntes@gmail.com',
