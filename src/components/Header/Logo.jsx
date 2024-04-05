@@ -1,11 +1,11 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Logo = () => {
   return (
-    <Link href="/" className="flex items-center">
-      <div className="flex items-center text-2xl md:text-3xl font-light">Blog
-        <span className="text-accent font-bold dark:font-semibold">&nbsp;Pharma</span>
-        Six
+    <Link href="/">
+      <div className="flex items-center w-12 sm:w-full">
+        <Image src="/blog/logo.webp" alt="Logo" width={80} height={80} />
       </div>
     </Link>
   );
