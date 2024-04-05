@@ -3,7 +3,7 @@ import siteMetadata from '../utils/siteMetaData';
 export default function manifest() {
   return {
     name: siteMetadata.title,
-    short_name: '3Chains',
+    short_name: 'PharmaSix',
     description: siteMetadata.description,
     start_url: '/',
     display: 'standalone',
