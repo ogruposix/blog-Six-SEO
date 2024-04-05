@@ -1,10 +1,10 @@
 import AvatarAnimation from '@/src/components/Contact/AvatarAnimation';
-import ContactForm from '@/src/components/Contact/ContactForm';
+// import ContactForm from '@/src/components/Contact/ContactForm';
 import siteMetadata from '@/src/utils/siteMetaData';
 
 export const metadata = {
-  title: 'Entre em Contato Comigo',
-  description: `Entre em contato comigo através do formulário disponível nesta página ou envie um email para ${siteMetadata.email}`
+  title: 'Entre em Contato com a PharmaSix',
+  description: `Entre em contato conosco enviando um email para ${siteMetadata.email}`
 };
 
 export default function Contact() {
@@ -22,9 +22,14 @@ export default function Contact() {
         className="w-full md:w-3/5 h-full flex flex-col items-center justify-center
         px-5 xs:px-10 md:px-16 pb-8">
         <h2 className="font-bold capitalize text-2xl xs:text-3xl sm:text-4xl">
-          Fale comigo!
+          Fale conosco!
         </h2>
-        <ContactForm />
+        <p>Através do nosso sac.</p>
+        <p>
+          <a href={`mailto:${siteMetadata.email}`}>{siteMetadata.email}</a>
+        </p>
+
+        {/* <ContactForm /> */}
       </div>
     </section>
   );

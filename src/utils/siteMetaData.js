@@ -1,21 +1,21 @@
 const siteMetadata = {
-  title: 'PharmaSix',
-  author: 'trichains',
-  headerTitle: 'PharmaSix',
+  title: 'PharmaSix - seu guia para uma vida saudável',
+  author: 'PharmaSix',
+  headerTitle: 'PharmaSix Blog',
   description:
-    'Um blog criado com Next.js, Tailwind.css e Contentlayer para explorar e compartilhar conhecimentos sobre programação e desenvolvimento web.',
+    'Explore o PharmaSix Blog, seu guia definitivo para uma vida saudável e plena. Mergulhe em artigos detalhados sobre saúde, nutrição, bem-estar, fitness e estilo de vida saudável, todos elaborados para enriquecer seu conhecimento e inspirar mudanças positivas. Conecte-se conosco e descubra dicas práticas, insights profundos e as últimas tendências em saúde e bem-estar, projetadas para apoiar sua jornada de autocuidado e transformação pessoal.',
   language: 'pt-br',
   theme: 'system',
   siteUrl: 'https://pharmasix.com.br/blog',
-  siteLogo: '/avatar.png',
-  socialBanner: '/banner.jpg',
-  email: '3correntes@gmail.com',
-  facebook: 'https://facebook.com/trichains',
-  github: 'https://github.com/trichains',
-  portfolio: 'https://www.trichains.dev',
-  linkedin: 'https://www.linkedin.com/in/trichains/',
+  siteLogo: '/pharmasix.jpg', 
+  socialBanner: '/pharmasix.jpg',
+  email: 'pharmasix.sac@gmail.com', 
+  facebook: '',
+  twitter: '',
+  instagram: '',
+  github: '', 
   locale: 'pt-BR',
-  type: 'website'
+  type: 'website' 
 };
 
 module.exports = siteMetadata;
