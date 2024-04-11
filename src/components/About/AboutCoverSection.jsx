@@ -9,7 +9,7 @@ const AboutCoverSection = () => {
         justify-center px-5 xs:p-10 pb-10 lg:px-16">
         <p className="mt-4 text-base sm:text-xl font-medium dark:font-normal text-center">
           Bem-vindo(a) ao blog Pharmasix, seu destino definitivo para dicas
-          práticas e inspiradoras sobre saúde e bem-estar! ,espaço esse que é
+          práticas e inspiradoras sobre saúde e bem-estar!, blog esse que é
           dedicado a ajudar você a alcançar seu potencial máximo de saúde e
           felicidade.
         </p>
