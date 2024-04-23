@@ -1,4 +1,4 @@
-import InsightRoll from '@/src/components/About/InsightRoll';
+// import InsightRoll from '@/src/components/About/InsightRoll';
 
 const insights = [
   '20+ Projetos Concluídos 🚀',
@@ -13,7 +13,7 @@ const insights = [
 export default function AboutLayout({ children }) {
   return (
     <main className="flex flex-col items-center justify-between w-full">
-      <InsightRoll insights={insights} />
+      {/* <InsightRoll insights={insights} /> */}
       {children}
     </main>
   );

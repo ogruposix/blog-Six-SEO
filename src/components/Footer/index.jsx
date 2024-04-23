@@ -21,7 +21,7 @@ const Footer = () => {
 
   return (
     <footer className="flex flex-col items-center">
-      <div
+      {/* <div
         className="flex flex-col text-center items-center
         bg-darkSurface text-lightText w-full
         mt-16 mx-2 rounded-2xl sm:rounded-none">
@@ -60,8 +60,8 @@ const Footer = () => {
           />
         </form>
 
-        <div className="flex items-center mt-8 md:mb-5">
-          {/* <a
+        <div className="flex items-center mt-8 md:mb-5"> */}
+      {/* <a
             href={siteMetadata.facebook}
             target="_blank"
             rel="noreferrer"
@@ -102,8 +102,8 @@ const Footer = () => {
               className={'hover:scale-125 transition-all ease duration-200'}
             />
           </a> */}
-        </div>
-      </div>
+      {/* </div>
+      </div> */}
 
       <div
         className="w-full relative font-medium bg-light dark:bg-dark
@@ -126,7 +126,8 @@ const Footer = () => {
             Segurança
           </p>
           <div className="flex justify-center gap-4 items-center w-full md:w-auto text-center">
-            <a href="https://transparencyreport.google.com/safe-browsing/search?url=pharmasix.com.br%2Fblog&hl=pt-PT"
+            <a
+              href="https://transparencyreport.google.com/safe-browsing/search?url=pharmasix.com.br%2Fblog&hl=pt-PT"
               target="_blank"
               rel="noreferrer">
               <Image

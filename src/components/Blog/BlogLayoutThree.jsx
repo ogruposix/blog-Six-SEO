@@ -1,4 +1,4 @@
-import Tag from '../Elements/Tag';
+// import Tag from '../Elements/Tag';
 import Link from 'next/link';
 import Image from 'next/image';
 import { format } from 'date-fns';
@@ -8,7 +8,7 @@ import getAssetUrl from '@/src/utils/AssertUrl';
 const BlogLayoutThree = ({ blog }) => {
   return (
     <div className="group flex flex-col items-center text-dark dark:text-lightText">
-      <Link href={blog.url} className="h-full rounded-xl overflow-hidden">
+      <Link href={blog.url} className="h-full w-full rounded-xl overflow-hidden">
         <Image
           src={getAssetUrl(blog.image.filePath.replace('../public', ''))}
           placeholder="blur"

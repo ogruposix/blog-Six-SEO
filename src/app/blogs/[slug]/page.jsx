@@ -1,6 +1,7 @@
 import { allBlogs } from '@/.contentlayer/generated';
 import { slug } from 'github-slugger';
 import BlogDetails from '@/src/components/Blog/BlogDetails';
+import Custom404 from '@/src/app/not-found';
 import RenderMdx from '@/src/components/Blog/RenderMdx';
 import Tag from '@/src/components/Elements/Tag';
 import Image from 'next/image';
@@ -15,6 +16,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const blog = allBlogs.find((blog) => blog._raw.flattenedPath === params.slug);
+
   if (!blog) {
     return;
   }
@@ -64,6 +66,10 @@ export async function generateMetadata({ params }) {
 
 export default function BlogPage({ params }) {
   const blog = allBlogs.find((blog) => blog._raw.flattenedPath === params.slug);
+
+  if (!blog) {
+    return <Custom404 />;
+  }
 
   let imageList = [siteMetadata.socialBanner];
   if (blog.image) {
