@@ -153,7 +153,7 @@ const Footer = () => {
         </div>
 
         <div className="text-center">
-          Feito com <span className="text-accent">♥</span> por{' '}
+          Feito com {' '}
           <a href="https://trichains.dev" className="underline">
             trichains
           </a>
