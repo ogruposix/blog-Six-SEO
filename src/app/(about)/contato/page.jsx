@@ -21,9 +21,9 @@ export default function Contact() {
       <div
         className="w-full md:w-3/5 h-full flex flex-col items-center justify-center
         px-5 xs:px-10 md:px-16 pb-8">
-        <h2 className="font-bold capitalize text-2xl xs:text-4xl sm:text-6xl mb-2">
+        <h1 className="font-bold capitalize text-2xl xs:text-4xl sm:text-6xl mb-2">
           Fale conosco!
-        </h2>
+        </h1>
         <p className="text-lg xs:text-xl font-bold">Através do nosso sac.</p>
         <p className="text-lg xs:text-xl mt-1">
           <a href={`mailto:${siteMetadata.email}`}>{siteMetadata.email}</a>
