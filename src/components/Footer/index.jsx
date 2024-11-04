@@ -153,7 +153,7 @@ const Footer = () => {
         </div>
 
         <div className="text-center">
-          Feito com {' '}
+          Feito por {' '}
           <a href="https://trichains.dev" className="underline">
             trichains
           </a>
