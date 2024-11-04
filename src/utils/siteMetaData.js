@@ -9,7 +9,7 @@ const siteMetadata = {
   siteUrl: 'https://pharmasix.com.br/blog',
   siteLogo: '/pharmasix.jpg', 
   socialBanner: '/pharmasix.jpg',
-  email: 'pharmasix.sac@gmail.com', 
+  email: 'sac@vitasix.com.br', 
   facebook: '',
   twitter: '',
   instagram: '',
