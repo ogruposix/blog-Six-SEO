@@ -3,7 +3,7 @@ const AboutCoverSection = () => {
     <section
       className="w-full flex flex-col md:flex-row items-center justify-center
       border-b-2 border-solid border-lightGray dark:border-darkGray
-      text-dark dark:text-lightText">
+      text-dark dark:text-lightText my-12">
       <div
         className="w-full md:w-1/2 flex flex-col text-left items-start
         justify-center px-5 xs:p-10 pb-10 lg:px-16">

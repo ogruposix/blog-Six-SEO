@@ -113,6 +113,10 @@ const Footer = () => {
           &copy; 2024 - PharmaSix.
           <br />
           Todos os direitos reservados.
+          <br />
+          <span className="text-sm text-gray-600 dark:text-gray-400">
+            CNPJ: 54.546.790/0001-50
+          </span>
         </span>
 
         <Link
@@ -153,7 +157,7 @@ const Footer = () => {
         </div>
 
         <div className="text-center">
-          Feito por {' '}
+          Feito por{' '}
           <a href="https://trichains.dev" className="underline">
             trichains
           </a>
