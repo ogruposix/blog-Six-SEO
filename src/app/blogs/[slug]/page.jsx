@@ -28,13 +28,17 @@ export async function generateMetadata({ params }) {
   if (blog.image) {
     imageList =
       typeof blog.image.filePath === 'string'
-        ? [siteMetadata.siteUrl + blog.image.filePath.replace('../public', '')]
+        ? [
+            siteMetadata.siteUrl +
+              '/blog' +
+              blog.image.filePath.replace('../public', '')
+          ]
         : blog.image;
   }
 
   const ogImages = imageList.map((img) => {
     return {
-      url: img.includes('http') ? img : siteMetadata.siteUrl + img
+      url: img.includes('http') ? img : siteMetadata.siteUrl + '/blog' + img
     };
   });
 
@@ -75,7 +79,11 @@ export default function BlogPage({ params }) {
   if (blog.image) {
     imageList =
       typeof blog.image.filePath === 'string'
-        ? [siteMetadata.siteUrl + blog.image.filePath.replace('../public', '')]
+        ? [
+            siteMetadata.siteUrl +
+              '/blog' +
+              blog.image.filePath.replace('../public', '')
+          ]
         : blog.image;
   }
 

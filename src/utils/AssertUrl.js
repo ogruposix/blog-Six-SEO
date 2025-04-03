@@ -1,5 +1,5 @@
 const getAssetUrl = (src) => {
-    return `${process.env.ASSET_PREFIX}${src}`;
-  };
+  return `/blog${src}`;
+};
 
-  module.exports = getAssetUrl;
+module.exports = getAssetUrl;
